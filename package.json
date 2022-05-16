@@ -1,0 +1,10 @@
+{
+    "main": "server.js",
+    "scripts": {
+        "postinstall": "npm install --prefix ./server",
+        "start": "cd server && npm start",
+        "start": "cd ./server && npm start",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": ""
+}

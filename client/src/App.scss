@@ -1,0 +1,160 @@
+@import 'bootstrap/scss/functions';
+
+$primary: #6610f2;
+
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/buttons';
+@import 'bootstrap/scss/forms';
+
+$half-spacer: $spacer * .5;
+
+@media (max-width: 767px) {
+    .collapse {
+        margin-top: $half-spacer;
+    }
+    .collapsing {
+        margin-top: $half-spacer;
+    }
+}
+
+.item-image {
+    max-width: 10rem;
+}
+
+.user-form {
+    max-width: 16rem;
+}
+
+.comment-section {
+    max-width: 40rem;
+}
+
+.new-collection-form {
+    max-width: 60rem;
+}
+
+.new-collection-form select {
+    max-width: 8rem;
+}
+
+.rbt-token-removeable {
+    background-color: rgba($primary, 0.9);
+    color: $light;
+}
+
+.rbt-input.focus {
+    box-shadow: $input-btn-focus-box-shadow;
+}
+
+.rbt-menu {
+    margin-bottom: 0 !important;
+}
+
+.dark .rbt-menu {
+    background-color: $dark;
+    color: $light;
+}
+
+.dark .rbt-input-hint {
+    color: $secondary !important;
+}
+
+.dark .dropdown-item {
+    color: $light;
+}
+
+.dark .dropdown-item:hover {
+    background-color: $secondary;
+    color: $light;
+}
+
+.rbt-close {
+    background: transparent;
+    border: none;
+}
+
+.dark .rbt-input-main {
+    color: $light;
+}
+
+.navbar {
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+.dark {
+    background-color: $dark;
+    color: $light;
+}
+
+.dark .border {
+    border-color: $secondary !important;
+}
+
+.dark .form-control {
+    background-color: $dark;
+    color: $light;
+    border-color: $secondary;
+}
+
+.dark .form-control:focus {
+    background-color: $dark;
+    color: $light;
+    border-color: $secondary;
+}
+
+.dark :-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px $blue-900;
+    -webkit-text-fill-color: $light;
+    caret-color: white;
+}
+
+.dark :-webkit-autofill:focus {
+    -webkit-box-shadow: inset 0 0 0 50px $blue-900, $input-btn-focus-box-shadow;
+    -webkit-text-fill-color: $light;
+    caret-color: white;
+}
+
+.dark .form-select {
+    background-color: $dark;
+    color: $light;
+    border-color: $secondary;
+}
+
+.dark .list-group-item {
+    background-color: $dark;
+    color: $light;
+    border-color: $secondary;
+}
+
+.dark .accordion-item {
+    border-color: $secondary;
+}
+
+.dark .accordion-button {
+    background-color: $dark;
+    color: $light;
+}
+
+.dark .accordion-button:focus {
+    box-shadow: $input-btn-focus-box-shadow;
+}
+
+.dark .accordion-button::after {
+    filter: invert(100%);
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: hue-rotate(40deg);
+}
+
+.dark .accordion-body {
+    background: $dark;
+    color: $light;
+}
+
+.dark .card {
+    background-color: $dark;
+    color: $light;
+    border-color: $secondary;
+}
