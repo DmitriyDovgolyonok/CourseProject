@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next'
 export default function PasswordInput({ className }) {
     const [reveal, setReveal] = useState(false)
     const { t } = useTranslation()
-    var inputType = reveal ? 'text' : 'password'
+    let inputType = reveal ? 'text' : 'password'
     return (
         <InputGroup className={className}>
             <Form.Control type={inputType} name='password' placeholder={t('uiPassword')} />
